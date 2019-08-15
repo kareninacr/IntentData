@@ -1,11 +1,12 @@
 package com.example.intentdata;
 
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final EditText name = (EditText) findViewById(R.id.textData);
-        Button button = (Button) findViewById(R.id.submit);
+        final EditText name = (EditText) findViewById(R.id.edtext_data);
+        Button button = (Button) findViewById(R.id.btn_submit);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

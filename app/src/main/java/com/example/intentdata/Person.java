@@ -58,10 +58,10 @@ public class Person implements Parcelable {
     }
 
     protected Person(Parcel in) {
-        this.name = in.readString();
-        this.age = in.readInt();
+        this.name  = in.readString();
+        this.age   = in.readInt();
         this.email = in.readString();
-        this.city = in.readString();
+        this.city  = in.readString();
     }
 
     public static final Parcelable.Creator<Person> CREATOR = new Parcelable.Creator<Person>() {

@@ -1,8 +1,9 @@
 package com.example.intentdata;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -11,9 +12,9 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        TextView t = (TextView) findViewById(R.id.viewData);
+        TextView tv = (TextView) findViewById(R.id.tv_data);
         Bundle bundle = getIntent().getExtras();
         String s = bundle.getString("name");
-        t.setText(s);
+        tv.setText(s);
     }
 }
